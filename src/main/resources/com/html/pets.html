@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Available Pets</title>
+</head>
+<body>
+    <h1>Available Pets for Adoption</h1>
+    <ul>
+        <li th:each="pet : ${pets}">
+            <h2 th:text="${pet.name}"></h2>
+            <p>Breed: <span th:text="${pet.breed}"></span></p>
+            <p>Age: <span th:text="${pet.age}"></span> years</p>
+            <p>Description: <span th:text="${pet.description}"></span></p>
+        </li>
+    </ul>
+</body>
+</html>

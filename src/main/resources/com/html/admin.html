@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <a href="/add-pet">Add New Pet</a>
+    <ul>
+        <li th:each="pet : ${pets}">
+            <h2 th:text="${pet.name}"></h2>
+            <p>Breed: <span th:text="${pet.breed}"></span></p>
+            <p>Age: <span th:text="${pet.age}"></span> years</p>
+            <form th:action="@{/delete-pet/{id}(id=${pet.id})}" method="post">
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+    </ul>
+</body>
+</html>
