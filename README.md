@@ -1,6 +1,39 @@
 Pet Adoption Website
 This is a pet adoption website built using Java Servlets and JSP. The project allows users to register, log in, view pet profiles, and adopt pets. It also features a user management system and allows users to upload photos of pets available for adoption.
 
+Project Directory Structure
+online-pet-adoption/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── onlinepetadoption/
+│   │   │           ├── controller/      
+│   │   │           ├── dao/              
+│   │   │           ├── model/
+│   │   │           ├── service/          
+│   │   │           └── websocket/         
+│   │   ├── resources/
+│   │   │   ├── application.properties   
+│   │   │   └── static/
+│   │   │       ├── css/
+│   │   │       ├── js/                   
+│   │   │       └── images/
+│   │   ├── webapp/
+│   │   │   ├── WEB-INF/
+│   │   │   │   └── web.xml             
+│   │   │   ├── jsp/                      
+│   │   │   └── index.html                 
+│   ├── test/                              
+│       ├── java/
+│       │   └── com/
+│       │       └── onlinepetadoption/ 
+│       │           └── test/
+├── pom.xml                                 
+├── README.md                             
+└── .gitignore                            
+
+
 Prerequisites
 Java 11
 Apache Maven
