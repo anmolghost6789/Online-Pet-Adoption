@@ -3,35 +3,7 @@ This is a pet adoption website built using Java Servlets and JSP. The project al
 
 Project Directory Structure
 online-pet-adoption/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── onlinepetadoption/
-│   │   │           ├── controller/      
-│   │   │           ├── dao/              
-│   │   │           ├── model/
-│   │   │           ├── service/          
-│   │   │           └── websocket/         
-│   │   ├── resources/
-│   │   │   ├── application.properties   
-│   │   │   └── static/
-│   │   │       ├── css/
-│   │   │       ├── js/                   
-│   │   │       └── images/
-│   │   ├── webapp/
-│   │   │   ├── WEB-INF/
-│   │   │   │   └── web.xml             
-│   │   │   ├── jsp/                      
-│   │   │   └── index.html                 
-│   ├── test/                              
-│       ├── java/
-│       │   └── com/
-│       │       └── onlinepetadoption/ 
-│       │           └── test/
-├── pom.xml                                 
-├── README.md                             
-└── .gitignore                            
+                      
 
 
 Prerequisites
