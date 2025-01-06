@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Adoption Form</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Adoption Form</h1>
+    </header>
+    <form action="/submit-adoption" method="post" onsubmit="validateForm(event)">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Why do you want to adopt this pet?</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit Adoption Request</button>
+    </form>
+    <footer>
+        &copy; 2024 Pet Adoption Platform
+    </footer>
+</body>
+</html>

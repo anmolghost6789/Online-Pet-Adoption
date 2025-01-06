@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    flex: 1 1 calc(33% - 20px); /* 3 cards per row with margin */
+    margin: 10px;
+}
